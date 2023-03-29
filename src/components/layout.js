@@ -3,7 +3,7 @@ import { Layout, theme } from "antd";
 import AppSider from "./sider";
 import AppFooter from "./footer";
 const { Content } = Layout;
-
+import Lottery from './lottery';
 const AppLayout = () => {
   const {
     token: { colorBgContainer },
@@ -28,8 +28,9 @@ const AppLayout = () => {
               background: colorBgContainer,
             }}
           >
-            Bill is a cat.
+             <Lottery/>
           </div>
+         
         </Content>
         <AppFooter />
       </Layout>
