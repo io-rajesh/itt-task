@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 const Ball = (props) => {
+    
     const ballStyle = {
         width:'3em',
         height:'2.25em',
@@ -27,5 +28,6 @@ export default Ball
 
 Ball.propTypes = {
     num: PropTypes.number,
+    name: PropTypes.string,
   };
   
