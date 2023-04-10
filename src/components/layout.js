@@ -3,7 +3,8 @@ import { Layout, theme } from "antd";
 import AppSider from "./sider";
 import AppFooter from "./footer";
 const { Content } = Layout;
-import Lottery from './lottery';
+// import Lottery from "./lottery";
+import { Outlet } from "react-router-dom";
 const AppLayout = () => {
   const {
     token: { colorBgContainer },
@@ -28,9 +29,8 @@ const AppLayout = () => {
               background: colorBgContainer,
             }}
           >
-             <Lottery/>
+            <Outlet />
           </div>
-         
         </Content>
         <AppFooter />
       </Layout>
